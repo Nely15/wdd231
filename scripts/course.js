@@ -129,7 +129,7 @@ document.querySelector("#wdd").addEventListener("click", () => {
     const wddCourses = courses.filter(course =>
         course.subject === "WDD"
     );
-    displayCourses(courses);
+    displayCourses(wddCourses);
 
 });
 
