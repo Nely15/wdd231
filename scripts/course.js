@@ -42,7 +42,7 @@ const courses = [
     {
         subject: "WDD",
         number: 231,
-        title: "Web Fronted Development",
+        title: "Web Frontend Development",
         credits: 2,
         completed: false
     }
@@ -91,7 +91,15 @@ document.querySelector("#cse").addEventListener("click", () => {
         course.subject === "CSE"
     );
 
-    displayCourses(wddCourses);
+    displayCourses(cseCourses);
+
+});
+
+document.querySelector("#wdd").addEventListener("click", () => {
+    const wddCourses = courses.filter(course =>
+        course.subject === "WDD"
+    );
+    displayCourses(courses);
 
 });
 
