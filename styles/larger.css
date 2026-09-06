@@ -28,7 +28,7 @@
     }
 
     .navigation li {
-        float: 1;
+        flex: 1;
     }
 
     .navigation a {
