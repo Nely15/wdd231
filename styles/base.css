@@ -158,9 +158,6 @@ header span {
     display: block;
 }
 /****************Courses****************/
-.course {
-    margin: 30px 10px;
-}
 
 .course-buttons {
     display: grid;
