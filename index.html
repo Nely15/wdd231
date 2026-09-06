@@ -1,11 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+
+    <title>Blanca's Home Page | Wdd 231</title>
+    <meta name="description" content="Blanca's WDD 231 course home page.">
+    <meta name="author" content="Blanca Ruiz">
+
+    <!-- Google Font Here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Style Sheets here -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
 </head>
+
 <body>
-    <h1>WDD 231 - Blanca Ruiz</h1>
+
+    <header>
+
+        <img src="images/home.svg" alt="Site Logo" width="512" height="512">
+        <span>Blanca's Site </span>
+        <button id="ham-btn" class="hamburger"></button>
+    
+    </header>
+
+
+    <nav id="nav-bar" class="navigation">
+
+        <ul>
+
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        
+        </ul>
+
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="top-content">
+
+            <section class="about">
+
+                <h2>About Me</h2>
+
+                <p>
+                    Hello! My name is Blanca. I am a student working toward my software Development
+                    degree through BYU-Pathway. I enjoy learning about technology and creating websites. 
+                    I am excited to continue learning new skills in web development and programming. 
+                </p>
+
+            </section>
+
+
+            <section class="student-photo">
+
+                <h2>Student Photo</h2>
+
+                <div class="photo-box">
+                    <img src="images/studentPhoto.jpg" alt="Photo of Blanca">
+                </div>
+
+            </section>
+
+        </div>
+
+        <section class="courses">
+
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-buttons">
+
+                <button id="all">ALL</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+
+            </div>
+
+            <div id="course-list"></div>
+
+            <p id="credits"></p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="social">
+
+            <a href="https://www.facebook.com/shiori.haruno" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="https://www.instagram.com/shiorinelyel/" target="_blank" rel="noopener noreferrer"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/ruiz-blanca/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.svg" alt="Linked In" width="16" height="16"></a>
+            <a href="http://github.com/nely15" target="_blank" rel="noopener noreferrer"><img src="images/github.svg" alt="Git Hub" width="16" height="16"></a>
+            
+        </div>
+
+        <p>
+             @ <span id="currentyear"></span>
+             | Blanca Ruiz | Texas, USA
+        </p>
+
+        <p id="lastModified"></p>
+        
+    </footer>
+    
 </body>
 </html>

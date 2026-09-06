@@ -1,0 +1,67 @@
+@media only screen and (min-width:38rem) {
+    header, main, nav, footer {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+
+    /*hide hamburger on desktop*/
+
+    .hamburger {
+        display: none;
+    }    
+
+    /*desktop navigation */
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation li {
+        float: 1;
+    }
+
+    .navigation a {
+        text-align: center;
+        border: none;
+    }
+
+    /*About & photo*/
+
+    .top-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+    }
+
+    .about, .student-photo {
+        margin-bottom: 0;
+    }
+
+    .photo-box {
+        min-height: 260px;
+    }
+
+    /*Courses */
+
+    #course-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /*Footer */
+
+    footer {
+        margin-top: 20px;
+    }
+
+}

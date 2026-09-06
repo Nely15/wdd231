@@ -1,0 +1,250 @@
+/*---Color Scheme---
+terra cotta --accent #E07A5F
+deep slate blue --dark #3D405B
+--light #f4f4f4
+--gray #d9d9d9
+*/
+
+:root {
+    --dark: #3D405B;
+    --light: #f4f4f4;
+    --gray: #d9d9d9;
+    --accent: #E07A5F;
+
+}
+
+/****************Site wide****************/
+* {    
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    margin: 0;
+    color: #222;
+}
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1{
+    margin: 1rem 10px;
+    color: var(--dark);
+}
+
+h2 {
+    margin: 0;
+    padding: 6px;
+    background-color: var(--dark);
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/****************Header ****************/
+header {
+    display: grid;
+    grid-template-columns: 59px 1fr 45px;
+    align-items: center;
+    gap: 10px;
+
+    max-width: 900px;
+    margin: 0 auto;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    padding: 5px 0 5px 10px;
+
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+
+/****************Hamburger ****************/
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--dark);
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+/****************Navigation****************/
+.navigation {
+    display: none;
+    background-color: var(--dark);
+
+}
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+    background-color: #55586f;
+}
+
+.navigation a:hover {
+    background-color: var(--accent);
+}
+
+/**************** About & Photo ****************/
+.top-content {
+    margin: 0 10px;
+}
+
+.about {
+    margin-bottom: 20px;
+}
+
+.about p {
+    background-color: var(--gray);
+    margin: 0;
+    padding: 15px;
+    line-height: 1.5;
+}
+
+.student-photo {
+    margin-bottom: 20px;
+}
+
+.photo-box {
+    background-color: var(--gray);
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #666;
+}
+
+.photo-box img {
+    width: 70%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+/****************Courses****************/
+.course {
+    margin: 30px 10px;
+}
+
+.course-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+    margin: 8px 0;
+}
+
+.course-buttons button {
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    background-color: #ddd;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.course-buttons button:hover {
+    background-color: var(--accent);
+    color: white;
+}
+
+#course-list {
+    display: grid;
+    gap: 6px;
+}
+
+.course {
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    padding: 8px;
+    text-align: center;
+}
+
+.course.completed {
+    background-color: #cfe8cf;
+    border: 2px solid #609660;
+}
+
+#credits {
+    text-align: center;
+    font-size: .9rem;
+}
+
+/****************Footer****************/
+footer {
+    background-color: var(--gray);
+    max-width: 900px;
+    margin: 20px auto 0;
+    padding: 12px 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+
+    margin-bottom: 12px;
+
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #eee;
+}
+
+footer p {
+    margin: 6px;
+}
