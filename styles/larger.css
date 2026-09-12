@@ -6,7 +6,7 @@
     }
 
     header {
-        grid-template-columns: 24px auto;
+        grid-template-columns: 35px auto;
     }
 
 
@@ -28,7 +28,7 @@
     }
 
     .navigation li {
-        flex: 1;
+        flex: 0 0 auto;
     }
 
     .navigation a {
@@ -53,6 +53,9 @@
     }
 
     /*Courses */
+    .courses {
+        margin: 10px 0 0;
+    }
 
     #course-list {
         grid-template-columns: repeat(3, 1fr);
@@ -61,7 +64,7 @@
     /*Footer */
 
     footer {
-        margin-top: 20px;
+        margin: 20px auto 0;
     }
 
 }

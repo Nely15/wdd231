@@ -29,7 +29,7 @@ main {
 }
 
 h1{
-    margin: 1rem 10px;
+    margin: 1.2rem 10px;
     color: var(--dark);
 }
 
@@ -45,12 +45,12 @@ h2 {
 /****************Header ****************/
 header {
     display: grid;
-    grid-template-columns: 59px 1fr 45px;
+    grid-template-columns: 45px 1fr 45px;
     align-items: center;
     gap: 10px;
 
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 10px;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
     padding: 5px 0 5px 10px;
@@ -124,15 +124,19 @@ header span {
 
 /**************** About & Photo ****************/
 .top-content {
-    margin: 0 10px;
+    margin: 0;
+}
+
+.courses {
+    margin: 10px 10px 0;
 }
 
 .about {
     margin-bottom: 20px;
+    background-color: var(--gray);
 }
 
 .about p {
-    background-color: var(--gray);
     margin: 0;
     padding: 15px;
     line-height: 1.5;
@@ -145,6 +149,7 @@ header span {
 .photo-box {
     background-color: var(--gray);
     min-height: 300px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -183,7 +188,7 @@ header span {
 
 #course-list {
     display: grid;
-    gap: 6px;
+    gap: 8px;
 }
 
 .course {
@@ -202,13 +207,14 @@ header span {
 #credits {
     text-align: center;
     font-size: .9rem;
+    margin: 10px 0;
 }
 
 /****************Footer****************/
 footer {
     background-color: var(--gray);
     max-width: 900px;
-    margin: 20px auto 0;
+    margin: 20px 10px 0;
     padding: 12px 10px;
     text-align: center;
 }

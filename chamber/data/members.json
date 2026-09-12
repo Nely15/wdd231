@@ -1,0 +1,82 @@
+[
+    {
+
+        "name": "Raw Xocolat",
+        "address": "500 E. Morrison Rd. , Brownsville, TX, United States, Texas",
+        "phone": "(956) 933-7690",
+        "website": "https://rawxocolat.cloveronline.com/categories/all" ,
+        "image": "rawxocolat.jpg",
+        "membership":,
+        "description": "A local chocolate factory & cafe shop serving gourmet chocolates, pastries, coffee, and breakfast.",
+        "category": "Food & Drink"
+
+    },
+
+    {
+        "name": "Sunrise Tortas",
+        "address": "2370 North Expy, Brownsville, TX",
+        "phone": "(956) 541-5031",
+        "website": "https://sunrise-tortas.hey-restaurants.com/",
+        "image": "sunrise_tortas.jpg",
+        "membership": ,
+        "description": "A local Mexican-style restaurant serving tortas, flautas, aguas frescas, and other mexican food and snacks.",
+        "category": "Food & Drink"
+    },
+
+    {
+        "name": "uBreakiFix",
+        "address": "3025 Boca Chica Blvd Suite E 1, Brownsville, TX",
+        "phone": "(956) 545-0200",
+        "website":"https://www.ubreakifix.com/locations/brownsville" ,
+        "image": ,
+        "membership": ,
+        "description": "Phone and computer repair services for local businesses and organizations.",
+        "category": "Technology"
+    },
+
+    {
+        "name": "La Plaza Bakery",
+        "address": "315 N Expressway, Brownsville, TX",
+        "phone": "(956) 555-0104",
+        "website": ,
+        "image": ,
+        "membership": ,
+        "description": "A  neighborhood bakery offering breads, cakes, and pastries.",
+        "category": "Food & Drink"
+    },
+
+    {
+        "name": "Rio Grande Printing",
+        "address": "700 E Levee St, Brownsville, TX",
+        "phone": "(956 555-0105",
+        "website": ,
+        "image": ,
+        "membership": ,
+        "description": "Printing and design services for businesses and events.",
+        "category": "Business Services"
+    },
+
+    {
+        "name": "Rodeo Dental",
+        "address": "4100 Pablo Kisel, Brownsville, TX",
+        "phone": "(956) 555-0106",
+        "website": ,
+        "image": ,
+        "membership": ,
+        "description": "Family dental services for children and adults.",
+        "category": "Health"
+    },
+
+    {
+        "name": "Borderland Landscaping",
+        "address": "900 Paredes Line Rd, Brownsville, TX",
+        "phone": "(956) 555-0107",
+        "website": ,
+        "image": ,
+        "membership": ,
+        "description": "Lawn care and landscapin services for homes and businesses.",
+        "category": "Home Services"
+    }
+    
+
+]

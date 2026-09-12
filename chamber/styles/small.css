@@ -1,0 +1,205 @@
+:root {
+    --navy: #17324d;
+    --blue: #2f5d7c;
+    --gold: #d6a84f;
+    --cream: #f7f3eb;
+    --white: #ffffff;
+    --text: #222222;
+}
+
+body {
+    font-family: 'Monserrat', sans-serif;
+    color: var(--text);
+    background: var(--cream);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+}
+
+.brand img {
+    background-color: var(--gold);
+    border-radius: 50%;
+}
+
+.brand span,
+.brand strong {
+    display: block;
+}
+
+.brand span {
+    font-size: 1.1rem;
+}
+
+.brand strong {
+    font-family: 'Roboto Slab' serif;
+}
+
+.hamburger {
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: '☰';
+    color: var(--white);
+    font-size: 1.7rem;
+}
+
+.hamburger.show::before {
+    content: '✕';
+}
+
+.navigation {
+    display: none;
+    background-color: var(--blue);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .9rem 1rem;
+    color: var(--white);
+    text-decoration: none;
+    text-align: center;
+}
+
+.navigation a:hover,
+.navigation a.current {
+    background-color: var(--navy);
+}
+
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+    color: var(--navy);
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}
+
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    margin: 1.5rem 0;
+}
+
+.view-buttons button {
+    border: 1px solid var(--navy);
+    background-color: var(--white);
+    color: var(--navy);
+    padding: .6rem 1.2rem;
+    cursor: pointer;
+}
+
+.view-buttons button.active,
+.view-buttons button:hover {
+    background-color: var(--navy);
+    color: var(--white);
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.member-card {
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    border-top: 5px solid var(--gold);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .08);
+}
+
+.member-card img {
+    margin-bottom: .5rem;
+}
+
+.member-card h2 {
+    color: var(--navy);
+    margin: .5rem 0;
+    font-size: 1.25rem;
+}
+
+.member-card p {
+    margin: .4rem 0;
+}
+
+.member-card a {
+    color: var(--blue);
+    font-weight: 600;
+}
+
+.member-list {
+    display: block;
+}
+
+.member-list .member-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+    border-top: 0;
+    border-left: 5px solid var(--gold);
+    margin-bottom: .75rem;
+}
+
+.member-list .member-card img {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+footer {
+    margin-top: 2rem;
+    padding: 1.5rem 1rem;
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+}
+
+.footer-info h2 {
+    margin-top: 0;
+}
+
+footer p {
+    margin: .5rem 0
+}
