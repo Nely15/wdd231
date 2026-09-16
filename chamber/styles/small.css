@@ -114,6 +114,9 @@ h2 {
 h1 {
     color: var(--navy);
     text-align: center;
+    text-decoration: none;
+    border-bottom: none;
+    margin-bottom: 0.5rem;
 }
 
 .intro {
@@ -131,11 +134,24 @@ h1 {
     border: 1px solid var(--navy);
     background-color: var(--white);
     color: var(--navy);
-    padding: .6rem 1.2rem;
+    padding: .6rem 1rem;
     cursor: pointer;
+    font-family: 'Montserarat', sans-serif;
+    font-weight: 600;
+    border-radius: 4px;
 }
 
-.view-buttons button.active,
+.view-buttons button span {
+    font-size: 1.2rem;
+    margin-right: .25rem;
+}
+
+.view-buttons button.active {
+    background-color: var(--gold);
+    color: var(--navy);
+    border-color: var(--navy);
+}
+
 .view-buttons button:hover {
     background-color: var(--navy);
     color: var(--white);
@@ -153,11 +169,13 @@ h1 {
     border-top: 5px solid var(--gold);
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .08);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, .15);
 }
 
 .member-card img {
-    margin-bottom: .5rem;
+    display: block;
+    margin: 0 auto .5rem;
+    object-fit: contain;
 }
 
 .member-card h2 {
@@ -182,7 +200,7 @@ h1 {
 .member-list .member-card {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.2rem;
     text-align: left;
     border-top: 0;
     border-left: 5px solid var(--gold);
@@ -190,9 +208,11 @@ h1 {
 }
 
 .member-list .member-card img {
-    width: 80px;
+    width: 100px;
     height: 80px;
+    object-fit: contain;
     flex-shrink: 0;
+    margin: 0;
 }
 
 footer {
