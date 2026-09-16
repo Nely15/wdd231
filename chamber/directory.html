@@ -5,16 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Directory | Brownsville Chamber of Commerce</title>
-    <meta name="description" content="Find local businesses and Chamber members in Brownsville, Texas.">
+    <title>Business Directory | Brownsville Chamber of Commerce</title>
+    <meta name="description" content="Explore Brownsville Chamber of Commerce members, local businesses, services, and organizations in Brownsville, Texas.">
+    <meta name="author" content="Blanca Ruiz">
 
-    <meta property="og:title" content="Brownsville Chamber of Commerce Directory">
-    <meta property="og:description" content="Find local businesses and Chamber members in Brownsville, Texas.">
-    <meta property="og:image" content="https://nely15.github.io/wdd231/chamber/chamber-logo.svg">
+
+    <meta property="og:title" content="Brownsville Chamber of Commerce | Business Directory">
+    <meta property="og:description" content="Explore local Brownsville businesses and Chamber in the community business directory.">
+    <meta property="og:image" content="https://nely15.github.io/wdd231/chamber/images/chamber_social.png">
     <meta property="og:url" content="https://nely15.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
-    <link rel="icon" href="images/chamber-logo.svg">
+    <link rel="icon" href="favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +24,10 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@600;700&display=swap"
         rel="stylesheet">
     
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
@@ -34,26 +37,24 @@
 <body>
     <header>
 
-        <div class="brand">
-            <img src="images/chamber-logo.svg" alt="Brownsville Chamber logo" width="60" height="60">
-            <div>
-
+        <a class="brand" href="index.html" aria-label="Brownsville Chamber of Commerce home">
+            <img src="images/chamber_logo.svg" alt="Brownsville Chamber logo" width="60" height="60">
+            <span class="brand-name">
                 <span>Brownsville</span>
                 <strong>Chamber of Commerce</strong>
+            </span>
+        </a>
 
-            </div>
-        </div>
-
-        <button id="ham-btn" class="hamburger" arial-label="Open navigation menu"></button> 
+        <button id="ham-btn" class="hamburger" arial-label="Open navigation menu" aria-controls="nav-bar" aria-expanded="false"></button> 
     </header>
 
-    <nav id="nav-bar" class="navigation">
+    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
         <ul>
 
-            <li><a href="directory.html" class="current">Directory</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="#">Discover</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html" class="current" aria-current="page">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
 
         </ul>
 
@@ -63,10 +64,10 @@
         <h1>Business Directory</h1>
         <p class="intro">Explore local businesses and organizations in the Brownsville community.</p>
 
-        <div class="view-buttons">
+        <div class="view-buttons" aria-label="Directory view options">
 
-            <button id="grid" class="active">Grid</button>
-            <button id="list">List</button>
+            <button id="grid" class="active" type="button" aria-pressed="true">Grid</button>
+            <button id="list" type="button" aria-pressed="false">List</button>
 
         </div>
 
@@ -80,6 +81,8 @@
 
             <h2>Brownsville Chamber of Commerce</h2>
             <p>Brownsville, Texas</p>
+            <p> Phone: (956) 555-1550</p>
+            <p>email: info@brownsvillechamber.example</p>
             <p>Helping local businesses grow and connect.</p>
 
         </div>

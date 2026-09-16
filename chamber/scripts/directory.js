@@ -1,29 +1,49 @@
 const memberList = document.querySelector('#member-list');
-const memberList = document.querySelector('#grid');
-const memberList = document.querySelector('#list');
+const gridButton = document.querySelector('#grid');
+const listButton = document.querySelector('#list');
 
 async function getMembers() {
-    const response = await fetch('data/members.json');
-    const members = await response.json();
-    displayMembers(members);
+    try {
+        const response = await fetch("data/members.json");
+
+        if (!response.ok)
+            throw new Error(`Unable to load member data: ${response.status}`);
+        }  
+
+        const members = await response.json();
+        displayMembers(members);
+    } catch (error) {
+        memberList.innerHTML = `<p class="error">Sorry, the member directory could not be loaded.</p>`;
+        console.error(error);
+    }
+}
+
+function getMembershipName(level) {
+    if (level === 3) return "Gold";
+    if (level === 2) return "Silver";
+    return "Member";
 }
 
 function displayMembers(members) {
+    memberList.innerHTML = "";
+
     members.forEach((member) => {
         const card = document.createElement('article');
-        card.classList.add('member-card');
+        card.className = "member-card";
 
         card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name} logo" width="120" height="120" loading="lazy"
-            <div>
+            <img src="images/${member.image}" alt="${member.name} logo" width="180" height="120" loading="lazy">
+            <div class="member-info">
                 <h2>${member.name}</h2>
-                <p>${member.category}</p>
-                <p>${member.address}</p>
-                <p>${member.phone}</p>
-                <p>Membership: ${member.membership === 3 ? 'Gold' : member.membership === 2 ? 'Silver' : 'Member'} </p >
+                <p class="category">${member.category}</p>
+                <p>${member.description}</p>
+                <p><strong>Address:</strong> ${member.address}</p>
+                <p><strong>Phone:</strong> ${member.phone}</p>
+                <p><strong>Membership:</strong> ${getMembershipName(member.membership)}</p >
                 <a href="${member.website}" target="_blank" rel="noopener noreferrer"> Visit Website</a>
             </div>
         `;
+
         memberList.appendChild(card);
     });
 }
@@ -33,6 +53,8 @@ gridButton.addEventListener('click', () => {
     memberList.classList.remove('member-list');
     gridButton.classList.add('active');
     listButton.classList.remove('active');
+    gridButton.setAttribute("aria-pressed", "true");
+    listButton.setAttribute("aria-pressed", "false");
 });
 
 listButton.addEventListener('click', () => {
@@ -40,6 +62,8 @@ listButton.addEventListener('click', () => {
     memberList.classList.remove('member-grid');
     listButton.classList.add('active');
     gridButton.classList.remove('active');
+    listButton.setAttribute("aria-pressed", "true");
+    gridButton.setAttribute("aria-pressed", "false");
 });
 
 getMembers();
