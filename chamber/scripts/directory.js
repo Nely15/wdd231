@@ -6,22 +6,31 @@ async function getMembers() {
     try {
         const response = await fetch("data/members.json");
 
-        if (!response.ok)
+        if (!response.ok) {
             throw new Error(`Unable to load member data: ${response.status}`);
         }  
 
         const members = await response.json();
+
         displayMembers(members);
+
     } catch (error) {
-        memberList.innerHTML = `<p class="error">Sorry, the member directory could not be loaded.</p>`;
-        console.error(error);
+        console.error("Error loading members:", error);
+        memberList.innerHTML = "<p>Sorry, the member directory could not be loaded.</p>";
     }
 }
 
 function getMembershipName(level) {
-    if (level === 3) return "Gold";
-    if (level === 2) return "Silver";
+    if (level === 3) {
+        return "Gold";
+
+    } else if (level === 2) {
+        return "Silver";
+
+    } else {
     return "Member";
+
+    }
 }
 
 function displayMembers(members) {
@@ -32,7 +41,13 @@ function displayMembers(members) {
         card.className = "member-card";
 
         card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name} logo" width="180" height="120" loading="lazy">
+            <img src="images/${member.image}" 
+            alt="${member.name} logo" 
+            width="180" 
+            height="120" 
+            loading="lazy"
+            >
+
             <div class="member-info">
                 <h2>${member.name}</h2>
                 <p class="category">${member.category}</p>
@@ -51,8 +66,10 @@ function displayMembers(members) {
 gridButton.addEventListener('click', () => {
     memberList.classList.add('member-grid');
     memberList.classList.remove('member-list');
+
     gridButton.classList.add('active');
     listButton.classList.remove('active');
+
     gridButton.setAttribute("aria-pressed", "true");
     listButton.setAttribute("aria-pressed", "false");
 });
@@ -60,8 +77,10 @@ gridButton.addEventListener('click', () => {
 listButton.addEventListener('click', () => {
     memberList.classList.add('member-list');
     memberList.classList.remove('member-grid');
+
     listButton.classList.add('active');
     gridButton.classList.remove('active');
+    
     listButton.setAttribute("aria-pressed", "true");
     gridButton.setAttribute("aria-pressed", "false");
 });

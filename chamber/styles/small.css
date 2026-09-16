@@ -8,7 +8,7 @@
 }
 
 body {
-    font-family: 'Monserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: var(--text);
     background: var(--cream);
 }
@@ -40,10 +40,12 @@ header {
 
 .brand span {
     font-size: 1.1rem;
+    color: var(--gold);
 }
 
 .brand strong {
-    font-family: 'Roboto Slab' serif;
+    font-family: 'Roboto Slab', serif;
+    color: var(--white);
 }
 
 .hamburger {
@@ -88,9 +90,14 @@ header {
     text-align: center;
 }
 
-.navigation a:hover,
-.navigation a.current {
+.navigation a:hover {
     background-color: var(--navy);
+}
+
+.navigation a.current {
+    background-color: var(--gold);
+    color: var(--navy);
+    font-weight: 700;
 }
 
 main{
