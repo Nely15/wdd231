@@ -11,6 +11,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: var(--text);
     background: var(--cream);
+    margin: 0;
 }
 
 header {
@@ -26,6 +27,8 @@ header {
     display: flex;
     align-items: center;
     gap: .75rem;
+    color: var(--white);
+    text-decoration: none;
 }
 
 .brand img {
@@ -33,17 +36,18 @@ header {
     border-radius: 50%;
 }
 
-.brand span,
-.brand strong {
+.brand-name > span,
+.brand-name > strong {
     display: block;
 }
 
-.brand span {
+.brand-name span {
     font-size: 1.1rem;
     color: var(--gold);
+    font-weight: 600;
 }
 
-.brand strong {
+.brand-name strong {
     font-family: 'Roboto Slab', serif;
     color: var(--white);
 }
@@ -103,7 +107,7 @@ header {
 main{
     max-width: 1100px;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1.25rem;
 }
 
 h1,
@@ -115,12 +119,13 @@ h1 {
     color: var(--navy);
     text-align: center;
     text-decoration: none;
-    border-bottom: none;
-    margin-bottom: 0.5rem;
+    border: 0;
+    margin: .5rem 0 .35rem;
 }
 
 .intro {
     text-align: center;
+    margin-top: 0;
 }
 
 .view-buttons {
@@ -142,7 +147,7 @@ h1 {
 }
 
 .view-buttons button span {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     margin-right: .25rem;
 }
 
@@ -165,54 +170,63 @@ h1 {
 
 .member-card {
     background-color: var(--white);
-    border: 1px solid #ddd;
+    border: 1px solid #d6d6d6;
     border-top: 5px solid var(--gold);
     padding: 1rem;
     text-align: center;
     box-shadow: 0 3px 8px rgba(0, 0, 0, .15);
+    border-radius: 4px;
 }
 
 .member-card img {
     display: block;
+    width: 180px;
+    height: 120px;
     margin: 0 auto .5rem;
     object-fit: contain;
 }
 
 .member-card h2 {
     color: var(--navy);
-    margin: .5rem 0;
-    font-size: 1.25rem;
+    margin: .5rem 0 .25rem;
+    font-size: 1.15rem;
 }
 
 .member-card p {
     margin: .4rem 0;
+    line-height: 1.35;
+}
+
+.member-card .category {
+    color: var(--blue);
+    font-weight: 600;
+    font-size: .9rem;
 }
 
 .member-card a {
-    color: var(--blue);
+    color: var(--navy);
     font-weight: 600;
 }
+
+.member-card a:hover {
+    color: #76591c;
+}    
 
 .member-list {
     display: block;
 }
 
 .member-list .member-card {
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
+    display: block;
     text-align: left;
     border-top: 0;
     border-left: 5px solid var(--gold);
     margin-bottom: .75rem;
+    padding: .9rem 1rem;
 }
 
 .member-list .member-card img {
-    width: 100px;
-    height: 80px;
-    object-fit: contain;
-    flex-shrink: 0;
-    margin: 0;
+    display: none;
 }
 
 footer {

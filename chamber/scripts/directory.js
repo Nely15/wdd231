@@ -1,6 +1,6 @@
-const memberList = document.querySelector('#member-list');
-const gridButton = document.querySelector('#grid');
-const listButton = document.querySelector('#list');
+const memberList = document.querySelector("#member-list");
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
 
 async function getMembers() {
     try {
@@ -51,7 +51,7 @@ function displayMembers(members) {
             <div class="member-info">
                 <h2>${member.name}</h2>
                 <p class="category">${member.category}</p>
-                <p>${member.description}</p>
+                <p> class="description">${member.description}</p>
                 <p><strong>Address:</strong> ${member.address}</p>
                 <p><strong>Phone:</strong> ${member.phone}</p>
                 <p><strong>Membership:</strong> ${getMembershipName(member.membership)}</p >
@@ -62,27 +62,21 @@ function displayMembers(members) {
         memberList.appendChild(card);
     });
 }
+function setView(view) {
+    const isGrid = view === "grid";
     
-gridButton.addEventListener('click', () => {
-    memberList.classList.add('member-grid');
-    memberList.classList.remove('member-list');
+    memberList.classList.toggle('member-grid', isGrid);
+    memberList.classList.toggle('member-list', !isGrid);
 
-    gridButton.classList.add('active');
-    listButton.classList.remove('active');
+    gridButton.classList.toggle('active', isGrid);
+    listButton.classList.toggle('active', !isGrid);
 
-    gridButton.setAttribute("aria-pressed", "true");
-    listButton.setAttribute("aria-pressed", "false");
-});
-
-listButton.addEventListener('click', () => {
-    memberList.classList.add('member-list');
-    memberList.classList.remove('member-grid');
-
-    listButton.classList.add('active');
-    gridButton.classList.remove('active');
+    gridButton.setAttribute("aria-pressed", isGrid);
+    listButton.setAttribute("aria-pressed", !isGrid);
+}
     
-    listButton.setAttribute("aria-pressed", "true");
-    gridButton.setAttribute("aria-pressed", "false");
-});
+gridButton.addEventListener("click", () => setView("grid")); 
+   
+listButton.addEventListener("click", () => setView("list"));  
 
 getMembers();
