@@ -61,7 +61,7 @@
         "address": "4100 Pablo Kisel, Brownsville, TX",
         "phone": "(956) 555-0106",
         "website": "https://www.rodeodental.com/",
-        "image": "rodeo_dental.png",
+        "image": "rodeo_dental.jpg",
         "membership": 1,
         "description": "Family dental services for children and adults.",
         "category": "Health"
@@ -74,7 +74,7 @@
         "website": "https://fischerlandscapingusa.com/",
         "image":"fischer_landscaping.jpg",
         "membership": 3,
-        "description": "Lawn care and landscapin services for homes and businesses.",
+        "description": "Lawn care and landscaping services for homes and businesses.",
         "category": "Home Services"
     }
     
