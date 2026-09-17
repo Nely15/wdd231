@@ -1,6 +1,6 @@
 :root {
     --navy: #17324d;
-    --blue: #2f5d7c;
+    --blue: #24506f;
     --gold: #d6a84f;
     --cream: #f7f3eb;
     --white: #ffffff;
@@ -242,5 +242,5 @@ footer {
 }
 
 footer p {
-    margin: .5rem 0
+    margin: .5rem 0;
 }

@@ -36,21 +36,18 @@ function getMembershipName(level) {
 function displayMembers(members) {
     memberList.innerHTML = "";
 
+    const fragment = document.createDocumentFragment();
+
     members.forEach((member, index) => {
         const card = document.createElement("article");
         card.className = "member-card";
 
-        const imageLoading = index === 0
-            ? 'fetchpriority="high"'
-            : 'loading="lazy"';
+        const image = index === 0
+            ? `<img src="images/${member.image}" alt="${member.name} logo" width="180" height="120">`
+            : `<img src="images/${member.image}" alt="${member.name} logo" width="180" height="120" loading="lazy">`;
 
         card.innerHTML = `
-            <img src="images/${member.image}" 
-            alt="${member.name} logo" 
-            width="180" 
-            height="120" 
-            ${imageLoading}
-            >
+            ${image}
 
             <div class="member-info">
                 <h2>${member.name}</h2>
@@ -63,9 +60,12 @@ function displayMembers(members) {
             </div>
         `;
 
-        memberList.appendChild(card);
+        fragment.appendChild(card);
     });
+    
+    memberList.appendChild(fragment);
 }
+
 function setView(view) {
     const isGrid = view === "grid";
     
