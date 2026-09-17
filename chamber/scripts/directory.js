@@ -37,7 +37,7 @@ function displayMembers(members) {
     memberList.innerHTML = "";
 
     members.forEach((member) => {
-        const card = document.createElement('article');
+        const card = document.createElement("article");
         card.className = "member-card";
 
         card.innerHTML = `
@@ -51,11 +51,11 @@ function displayMembers(members) {
             <div class="member-info">
                 <h2>${member.name}</h2>
                 <p class="category">${member.category}</p>
-                <p> class="description">${member.description}</p>
+                <p class="description">${member.description}</p>
                 <p><strong>Address:</strong> ${member.address}</p>
                 <p><strong>Phone:</strong> ${member.phone}</p>
-                <p><strong>Membership:</strong> ${getMembershipName(member.membership)}</p >
-                <a href="${member.website}" target="_blank" rel="noopener noreferrer"> Visit Website</a>
+                <p><strong>Membership:</strong> ${getMembershipName(member.membership)}</p>
+                <a href="${member.website}" target="_blank" rel="noopener noreferrer">Visit Website</a>
             </div>
         `;
 
