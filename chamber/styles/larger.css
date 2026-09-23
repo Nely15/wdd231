@@ -20,7 +20,23 @@
     .member-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Home Page */
+    .hero-content {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        max-width: 450px;
+        background-color: rgb(23, 50, 77, .9);
+        padding: 1.5rem;
+    }
+
+    #spotlight-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
 }
+
 
 @media only screen and (min-width: 60rem) {
     .member-grid {

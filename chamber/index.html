@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brownsville Chamber of Commerce | Home</title>
+    <meta name="description" content="Welcome to the Brownsville Chamber of Commerce.  Connect with local businesses, discover community events, and grow your business in Brownsville, Texas.">
+    <meta name="author" content="Blanca Ruiz">
+
+
+    <meta property="og:title" content="Brownsville Chamber of Commerce | Home">
+    <meta property="og:description" content="Connect with local businesses, discover community events, and grow your business in Brownsville, Texas..">
+    <meta property="og:image" content="https://nely15.github.io/wdd231/chamber/images/chamber_social.png">
+    <meta property="og:url" content="https://nely15.github.io/wdd231/chamber/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@600;700&display=swap"
+        rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    
+</head>
+
+<body>
+    <header>
+
+        <a class="brand" href="index.html" aria-label="Home">
+            <img src="images/chamber_logo.svg" alt="Brownsville Chamber logo" width="60" height="60">
+            <span class="brand-name">
+                <span>Brownsville</span>
+                <strong>Chamber of Commerce</strong>
+            </span>
+        </a>
+
+        <button id="ham-btn" class="hamburger" aria-label="Open navigation menu" aria-controls="nav-bar" aria-expanded="false"></button> 
+    </header>
+
+    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+        <ul>
+
+            <li><a href="index.html" class="current" aria-current="page">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+
+        </ul>
+
+    </nav>
+
+    <main>
+        
+        <section class="hero">
+
+            <img src="images/chamber_social.png"
+                alt="Brownsville Chamber of Commerce"
+                width="1200"
+                height="630">
+
+            <div class="hero-content">
+
+                <h1>Welcome to the Brownsville Chamber of Commerce</h1>
+
+                <p>Connecting local business and strengthening our community.</p>
+
+                <a href="join.html" class="cta">Join the Chamber</a>
+
+            </div>
+
+        </section>
+
+        <section class="events">
+
+            <h2>Current Events</h2>
+  
+            <article>
+
+                <h3>Brownsville Bussiness Meetup</h3>
+
+                <p>Learn about opportunities to grow your business in our community.</p>
+
+            </article>
+
+        </section>
+
+        <section class="weather">
+
+            <h2>Brownsville Weather</h2>
+
+            <div id="current-weather">
+
+                <p>Loading weather...</p>
+
+            </div>
+
+        </section>
+
+        <section class="spotlights">
+
+            <h2>Bussiness Spotlights</h2>
+
+            <div id="spotlight-list">
+
+                <p>Loading business spotlights...</p>
+
+            </div>
+
+        </section>
+       
+    </main>
+
+
+    <footer>
+        <div class="footer-info">
+
+            <h2>Brownsville Chamber of Commerce</h2>
+            <p>Brownsville, Texas</p>
+            <p>Phone: (956) 555-1550</p>
+            <p>Email: info@brownsvillechamber.example</p>
+            <p>Helping local businesses grow and connect.</p>
+
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> Brownsville Chamber of Commerce | Blanca Ruiz |WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
