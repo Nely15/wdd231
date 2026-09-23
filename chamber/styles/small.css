@@ -248,6 +248,8 @@ footer p {
 .hero {
     position: relative;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero img {
@@ -261,6 +263,7 @@ footer p {
     background-color: var(--navy);
     color: var(--white);
     text-align: center;
+    position: static;
 }
 
 .hero-content h1 {
