@@ -307,7 +307,7 @@ footer p {
 }
 
 .events article h3 {
-    color: var(n);
+    color: var(--navy);
 }
 
 #current-weather,

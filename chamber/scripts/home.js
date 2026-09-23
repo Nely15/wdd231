@@ -84,7 +84,7 @@ async function getWeather() {
         const currentResponse = await fetch(currentUrl);
 
         if (!currentResponse.ok) {
-            throw new Error(`Curet weather error: ${currentResponse.status}`);
+            throw new Error(`Current weather error: ${currentResponse.status}`);
         }
 
         const forecastResponse = await fetch(forecastUrl);
