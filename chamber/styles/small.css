@@ -346,3 +346,24 @@ footer p {
     color: var(--navy);
     font-weight: 600;
 }
+
+#forecast-list {
+    display: grid;
+    gap: 1rem;
+}
+
+#forecast-list article {
+    text-align: center;
+    border-top: 3px solid var(--gold);
+    padding: 1rem;
+}
+
+#forecast-list h4 {
+    color: var(--navy);
+    margin-bottom: .5rem;
+}
+
+#forecast-list p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
