@@ -2,7 +2,7 @@ const spotlightList = document.querySelector("#spotlight-list");
 const currentWeather = document.querySelector("#current-weather");
 const forecastList = document.querySelector("#forecast-list");
 
-const apiKey = "be5ef25a0c25c39c5f571f003403aece";
+const apiKey = "d76a67bcc5468dd5821b81c9093dc68e";
 
 const latitude = 25.9018;
 const longitude = -97.4975;
@@ -53,7 +53,7 @@ function displaySpotlights(members)  {
         <p>${member.address}</p>
         <p>${member.phone}</p>
         <p>Membership: ${getMembershipLevel(member.membership)}</p>
-        <a href="${member.website}" target="blank" rel="noopener"> Visit Website </a>
+        <a href="${member.website}" target="_blank" rel="noopener"> Visit Website </a>
         
         `;
         spotlightList.appendChild(card);
@@ -83,10 +83,14 @@ async function getWeather() {
 
         const currentResponse = await fetch(currentUrl);
 
+        if (!currentResponse.ok) {
+            throw new Error(`Curet weather error: ${currentResponse.status}`);
+        }
+
         const forecastResponse = await fetch(forecastUrl);
 
-        if (!currentResponse.ok || !forecastResponse.ok) {
-            throw new Error("Unable to load weather data.");
+        if (!forecastResponse.ok) {
+            throw new Error(`Forecast error: ${forecastResponse.status}`);
         }
 
         const currentData = await currentResponse.json();
@@ -101,7 +105,8 @@ async function getWeather() {
         currentWeather.innerHTML =
             "<p>Sorry, the weather information could not be loaded.</p>";
 
-        forecastList.innerHTML = "";
+        forecastList.innerHTML = 
+            "<p>Sorry, the forecast information could not be loaded.</p>";
 
     }
 
