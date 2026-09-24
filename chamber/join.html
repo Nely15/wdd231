@@ -63,107 +63,285 @@
     <main>
 
         <h1>Join the Brownsville Chamber of Commerce</h1>
+
+        <div class="join-layout">
         
-        <form method="get" action="thankyou.html">
+            <form method="get" action="thankyou.html" class="join-form">
 
-            <label>
+                <label>
 
-                First Name
+                    First Name
 
-                <input
+                    <input
 
-                    type="text"
-                    name="firstName"
-                    title="Enter your first name"
-                    autocomplete="given-name"
-                    required
+                        type="text"
+                        name="firstName"
+                        title="Enter your first name"
+                        autocomplete="given-name"
+                        required
 
-                >
+                    >
 
-            </label>
+                </label>
 
-            <label>
+                <label>
 
-                Last Name
+                    Last Name
 
-                <input
+                    <input
 
-                    type="text"
-                    name="lasttName"
-                    title="Enter your last name"
-                    autocomplete="family-name"
-                    required
+                        type="text"
+                        name="lasttName"
+                        title="Enter your last name"
+                        autocomplete="family-name"
+                        required
 
-                >
+                    >
+                    
+                </label>
                 
-            </label>
-            
-            <label>
+                <label>
 
-                Organizational Title
+                    Organizational Title
 
-                <input
+                    <input
 
-                    type="text"
-                    name="organizationTitle"
-                    title="Enter your last organizational title"
-                    autocomplete="organization-title"
-                    pattern="[A-Za-z\s-]{7,}"
+                        type="text"
+                        name="organizationTitle"
+                        title="Enter your last organizational title"
+                        autocomplete="organization-title"
+                        pattern="[A-Za-z\s-]{7,}"
 
-                >
+                    >
+                    
+                </label>
                 
-            </label>
-            
-            <label>
+                <label>
 
-                Email Address
+                    Email Address
 
-                <input
+                    <input
 
-                    type="email"
-                    name="email"
-                    title="Enter your email address"
-                    autocomplete="email"
-                    placeholder="example@gmail.com"
-                    required
+                        type="email"
+                        name="email"
+                        title="Enter your email address"
+                        autocomplete="email"
+                        placeholder="example@gmail.com"
+                        required
 
-                >
+                    >
+                    
+                </label>
                 
-            </label>
-            
-            <label>
+                <label>
 
-                Mobile Phone Number
+                    Mobile Phone Number
 
-                <input
+                    <input
 
-                    type="tel"
-                    name="phone"
-                    title="Enter your mobile phone number"
-                    autocomplete="tel"
-                    required
+                        type="tel"
+                        name="phone"
+                        title="Enter your mobile phone number"
+                        autocomplete="tel"
+                        required
 
-                >
+                    >
+                    
+                </label>
+    
+                <label>
+
+                    Business/Organization Name
+
+                    <input
+
+                        type="text"
+                        name="organization"
+                        title="Enter your business or organization name"
+                        autocomplete="organization"
+                        required
+
+                    >
+                    
+                </label>
+                            
+                <label>
+
+                    Membership Level
+
+                    <select name="Membership" title="Select a membership level" required>
+
+                        <option value="" disabled selected>Select a membership level</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+
+                    </select>
+                            
+                </label>
                 
-            </label>
-  
-            <label>
+                <label>
 
-                Business/Organization Name
+                    Business/Organization Description
 
-                <input
-
-                    type="text"
-                    name="organization"
-                    title="Enter your business or organization name"
-                    autocomplete="organization"
-                    required
-
-                >
-                
-            </label>
+                    <textarea
                         
-        </form>
+                        name="description"
+                        title="Enter a description of your business or organization"
+                        rows="5"
+
+                    ></textarea>
+                    
+                </label>
+
+                <input
+
+                    type="hidden"
+                    name="timestamp"
+                    id="timestamp"
+
+                >    
+
+                <input type="submit" value="Submit Membership Application">
+                            
+            </form>
+
+
+            <section class="membership-levels">
+
+                <h2>Membership Levels</h2>
+
+                <article class="membership-card">
+
+                    <h2>NP Membership</h2>
+
+                    <p>For nonprofit organizations.</p>
+
+                    <a href="#np-modal">Learn More</a>
+
+                </article>
+                
+                <article class="membership-card">
+
+                    <h2>Bronze Membership</h2>
+
+                    <p>Great benefits for growingbusinesses.</p>
+
+                    <a href="#bronze-modal">Learn More</a>
+                    
+                </article>
+                
+                <article class="membership-card">
+
+                    <h2>Silver Membership</h2>
+
+                    <p>Additional marketing and event benefits.</p>
+
+                    <a href="#silver-modal">Learn More</a>
+                    
+                </article>
+                
+                <article class="membership-card">
+
+                    <h2>Gold Membership</h2>
+
+                    <p>Our highest level of membership benefits.</p>
+
+                    <a href="#gold-modal">Learn More</a>
+                    
+                </article>
+
+            </section>
+
+        </div>
+        
+        <dialog id="np-modal">
+
+            <h2>NP Membership</h2>
+
+            <p>NP Membership is available for nonprofit organizations and has no membership fee.</p>
+
+            <ul>
+
+                <li>Chamber networking opportunities</li>
+
+                <li>Community events</li>
+
+                <li>Nonprofit organization support</li>
+
+            </ul>
+
+            <button class="close-modal">Close</button>
+
+        </dialog>
+
+        <dialog id="bronze-modal">
+
+            <h2>Bronze Membership</h2>
+
+            <p>Bronze Membership provides basic chamber benefits for growing businesses.</p>
+
+            <ul>
+
+                <li>Networking opportunities</li>
+
+                <li>Business training</li>
+
+                <li>Event discounts</li>
+
+            </ul>
+
+            <button class="close-modal">Close</button>
+            
+        </dialog>
+
+        <dialog id="silver-modal">
+
+            <h2>Silver Membership</h2>
+
+            <p>Silver Membership includes additional opportunities to promote your business.</p>
+
+            <ul>
+
+                <li>Networking opportunities</li>
+
+                <li>Business training</li>
+
+                <li>Event discounts</li>
+
+                <li>Advertising opportunities</li>
+
+            </ul>
+
+            <button class="close-modal">Close</button>
+            
+        </dialog>
+
+        <dialog id="gold-modal">
+
+            <h2>Gold Membership</h2>
+
+            <p>Gold Membership is available for nonprofit organizations and has no membership fee.</p>
+
+            <ul>
+
+                <li>Networking opportunities</li>
+
+                <li>Business training</li>
+
+                <li>Event discounts</li>
+
+                <li>Advertising opportunities</li>
+
+                <li>Home page spotlight opportunities</li>
+
+                <li>Special chamber events</li>
+            </ul>
+
+            <button class="close-modal">Close</button>
+            
+        </dialog>
 
     </main>
 
@@ -182,6 +360,15 @@
         <p>&copy; <span id="currentyear"></span> Brownsville Chamber of Commerce | Blanca Ruiz |WDD 231</p>
         <p id="lastModified"></p>
     </footer>
+    
+
+    <script src="scripts/navigation.js"></script>
+
+    <script>
+
+        document.querySelector("#timestamp").value = new Date().toISOString();
+
+    </script>
     
 </body>
 </html>
