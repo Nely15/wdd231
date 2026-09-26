@@ -32,43 +32,33 @@ closeButtons.forEach((button) => {
 joinForm.addEventListener("submit", (event) => {
     const title = organizationTitle.value.trim();
 
-    /* Organizational Title is optional */
+    /* Organizational Title is optional Must be 7 characters 
+    min only letters, spaces, and hyphens are allowed */
     if (title !== "") {
         
-        /*Must be 7 characters min */
-        if (title.length < 7) {
+        const validTitle = /^[A-Za-z -]{7,}$test(title);
 
-            event.preventDefault();
-            organizationTitle.setCustomValidity(
-
-                "organizational title must be at least 7 characters."
-
-            );
-
-            organizationTitle.reportValidity();
-
-            return;
-
-    }
-
-        /* Only letters, spaces, and hyphens are allowed */
-        if (!/^[A-Za-z -]+$/.test(title)) {
+        if (!validTitle) {
 
             event.preventDefault();
             organizationTitle.setCustomValidity(
                 
-                "organizational title can only contain letters, spaces, and hyphens."
+                "Please enter at least 7 letters, spaces, or hyphens."
 
             );
 
             organizationTitle.reportValidity();
+        
+        } else {
 
-            return;
+            organizationTitle.setCustomValidity("");
 
         }
 
+    }  else {
+
+        organizationTitle.setCustomValidity("");
+
     }
 
-    organizationTitle.setCustomValidity("");
-    
 });
