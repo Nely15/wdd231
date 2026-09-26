@@ -72,4 +72,4 @@ organizationTitle.addEventListener("input", () => {
 
 });
 
-document.querySelector("#timestamp").value = new Date().toISOString();
+document.querySelector('#timestamp').value = new Date().toISOString();

@@ -19,7 +19,6 @@ params.get("organization") || "";
 const timestamp = params.get("timestamp");
 
 if (timestamp) {
-    
     const date = new Date(timestamp);
 
     const formattedDate = date.toLocaleDateString("en-US", {
