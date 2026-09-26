@@ -21,6 +21,22 @@ const timestamp = params.get("timestamp");
 if (timestamp) {
     const date = new Date(timestamp);
 
-    document.querySelector("#display-timestamp").textContent = 
-    params.get("timestamp");
+    const formattedDate = date.toLocaleDateString("en-US", {
+
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+
+    }) + " at " +
+
+    const formattedTime = date.toLocaleTimeString("en-US", {
+
+        hour: "numeric",
+        minute: "2-digit"
+
+    });
+
+    document.querySelector("#display=timestamp").textContent =
+        `${formattedDate} at ${formattedTime}`;
+
 }
