@@ -27,7 +27,7 @@ if (timestamp) {
         month: "long",
         day: "numeric"
 
-    }) + " at " +
+    }); 
 
     const formattedTime = date.toLocaleTimeString("en-US", {
 
@@ -37,6 +37,6 @@ if (timestamp) {
     });
 
     document.querySelector("#display=timestamp").textContent =
-        `${formattedDate} at ${formattedTime}`;
+        formattedDate + " at " + formattedTime;
 
 }
