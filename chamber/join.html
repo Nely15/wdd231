@@ -53,8 +53,8 @@
 
             <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li><a href="directory.html" class="current" aria-current="page">Directory</a></li>
-            <li><a href="join.html">Join</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="current" aria-current="page">Join</a></li>
 
         </ul>
 
@@ -91,7 +91,7 @@
                     <input
 
                         type="text"
-                        name="lasttName"
+                        name="lastName"
                         title="Enter your last name"
                         autocomplete="family-name"
                         required
@@ -108,9 +108,9 @@
 
                         type="text"
                         name="organizationTitle"
-                        title="Enter your last organizational title"
+                        title="Enter your organizational title using at least 7 letters, spaces, or hyphens"
                         autocomplete="organization-title"
-                        pattern="[A-Za-z\s-]{7,}"
+                        pattern="[A-Za-z -]{7,}"
 
                     >
                     
@@ -363,12 +363,14 @@
     
 
     <script src="scripts/navigation.js"></script>
+    
+    <script src="scripts/join.js"></script>
 
     <script>
 
         document.querySelector("#timestamp").value = new Date().toISOString();
 
     </script>
-    
+
 </body>
 </html>
