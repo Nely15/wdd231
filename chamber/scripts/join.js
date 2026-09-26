@@ -42,7 +42,7 @@ joinForm.addEventListener("submit", (event) => {
         if (!validTitle) {
 
             event.preventDefault();
-            
+
             organizationTitle.setCustomValidity(
                 
                 "Please enter at least 7 letters, spaces, or hyphens."
@@ -64,3 +64,12 @@ joinForm.addEventListener("submit", (event) => {
     }
 
 });
+
+/* Clear the custom error when the user starts correcting the field */
+organizationTitle.addEventListener("input", () => {
+
+    organizationTitle.setCustomValidity("");
+
+});
+
+document.querySelector("#timestamp").value = new Date().toISOString();
