@@ -19,6 +19,7 @@ params.get("organization") || "";
 const timestamp = params.get("timestamp");
 
 if (timestamp) {
+    
     const date = new Date(timestamp);
 
     const formattedDate = date.toLocaleDateString("en-US", {
@@ -36,7 +37,7 @@ if (timestamp) {
 
     });
 
-    document.querySelector("#display=timestamp").textContent =
+    document.querySelector("#display-timestamp").textContent =
         formattedDate + " at " + formattedTime;
 
 }

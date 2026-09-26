@@ -32,15 +32,17 @@ closeButtons.forEach((button) => {
 joinForm.addEventListener("submit", (event) => {
     const title = organizationTitle.value.trim();
 
-    /* Organizational Title is optional Must be 7 characters 
-    min only letters, spaces, and hyphens are allowed */
+    /* Organizational Title is optional. 
+    If it is entered, it must have at least 7 characters 
+    and only letters, spaces, and hyphens are allowed */
     if (title !== "") {
         
-        const validTitle = /^[A-Za-z -]{7,}$test(title);
+        const validTitle = /^[A-Za-z -]{7,}$/.test(title);
 
         if (!validTitle) {
 
             event.preventDefault();
+            
             organizationTitle.setCustomValidity(
                 
                 "Please enter at least 7 letters, spaces, or hyphens."
