@@ -74,6 +74,7 @@
 @media only screen and (min-width: 64.0625rem) {
 
     .discover-grid {
+        min-height: 1400px;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
     }

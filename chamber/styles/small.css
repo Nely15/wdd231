@@ -624,6 +624,7 @@ dialog li {
     gap: 1rem;
     margin-top: 1.5rem;
     width: 100%;
+    min-height: 4000px;
 }
 
 .discover-card {
