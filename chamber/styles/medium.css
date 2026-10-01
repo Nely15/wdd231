@@ -23,15 +23,6 @@
         object-fit: cover;
         transition: transform .3s ease, filter .3s ease;
     }
-
-     .discover-card address {
-        align-self: end;
-    }
-
-    .learn-more {
-        align-self: start;
-        margin-top: -.2rem;
-    }
     
     .discover-card img:hover {
         transform: scale(1.04);
