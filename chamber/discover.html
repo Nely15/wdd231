@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Brownsville Chamber of Commerce | Discover</title>
-    <meta name="description" content="Discover Brownsville, Texas, through local businesses, community resources, and places that help make our city a great place to live and work.">
+    <meta name="description"
+        content="Discover Brownsville, Texas, through local attractions, historic sites, nature areas, and community destinations.">
     <meta name="author" content="Blanca Ruiz">
 
     <meta property="og:title" content="Brownsville Chamber of Commerce | Discover">
-    <meta property="og:description" content="Discover Brownsville community resources, local businesses, and places of interest.">
-    <meta property="og:image" content="https://nely15.github.io/wdd231/chamber/images/chamber_social.png">
+    <meta property="og:description"
+        content="Discover Brownsville attractions, historic sites, natural areas, and community destinations.">
+    <meta property="og:image"
+        content="https://nely15.github.io/wdd231/chamber/images/chamber_social.png">
     <meta property="og:url" content="https://nely15.github.io/wdd231/chamber/discover.html">
     <meta property="og:type" content="website">
 
@@ -25,6 +28,7 @@
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/larger.css">
 
     <script src="scripts/navigation.js" defer></script>
@@ -33,87 +37,65 @@
 </head>
 
 <body>
+
     <header>
         <a class="brand" href="index.html" aria-label="Home">
-            <img src="images/chamber_logo.svg" alt="Brownsville Chamber logo" width="60" height="60">
+            <img src="images/chamber_logo.svg"
+                alt="Brownsville Chamber logo"
+                width="60"
+                height="60">
+
             <span class="brand-name">
                 <span>Brownsville</span>
                 <strong>Chamber of Commerce</strong>
             </span>
         </a>
 
-        <button id="ham-btn" class="hamburger" type="button"
-            aria-label="Open navigation menu" aria-controls="nav-bar" aria-expanded="false"></button>
+        <button id="ham-btn"
+            class="hamburger"
+            type="button"
+            aria-label="Open navigation menu"
+            aria-controls="nav-bar"
+            aria-expanded="false">
+        </button>
     </header>
 
     <nav id="nav-bar" class="navigation" aria-label="Main navigation">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html" class="current" aria-current="page">Discover</a></li>
+            <li>
+                <a href="discover.html"
+                    class="current"
+                    aria-current="page">
+                    Discover
+                </a>
+            </li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
         </ul>
     </nav>
 
     <main>
+
         <h1>Discover Brownsville</h1>
 
         <p class="intro">
-            Explore local businesses, community resources, and places that help Brownsville thrive.
+            Explore places, attractions, historic sites, and natural areas
+            that help make Brownsville a unique place to visit and live.
         </p>
 
-        <section class="discover-grid" aria-label="Brownsville highlights">
-            <article class="discover-card">
-                <img src="images/de_ayala_bakery.jpg"
-                    alt="Local bakery in Brownsville"
-                    width="180" height="120" loading="lazy">
-                <h2>Local Businesses</h2>
-                <p>Support local businesses and discover products and services offered by members of our community.</p>
-            </article>
+        <div id="visit-message" class="visit-message"></div>
 
-            <article class="discover-card">
-                <img src="images/fischer_landscaping.jpg"
-                    alt="Landscaping business serving Brownsville"
-                    width="180" height="120" loading="lazy">
-                <h2>Community Services</h2>
-                <p>Find local organizations and service providers that contribute to the growth of Brownsville.</p>
-            </article>
-
-            <article class="discover-card">
-                <img src="images/rodeo_dental.jpg"
-                    alt="Local dental office"
-                    width="180" height="120" loading="lazy">
-                <h2>Professional Services</h2>
-                <p>Connect with professionals who provide important services for residents and businesses.</p>
-            </article>
-
-            <article class="discover-card">
-                <img src="images/sunrise_tortas.jpg"
-                    alt="Local restaurant in Brownsville"
-                    width="180" height="120" loading="lazy">
-                <h2>Local Places</h2>
-                <p>Explore restaurants and community destinations while getting to know the businesses around Brownsville.</p>
-            </article>
-
-            <article class="discover-card">
-                <img src="images/nickys_print_shop.jpg"
-                    alt="Local print shop"
-                    width="180" height="120" loading="lazy">
-                <h2>Business Resources</h2>
-                <p>Chamber members can build connections, find resources, and learn about opportunities to grow.</p>
-            </article>
-
-            <article class="discover-card">
-                <img src="images/rawxocolat.jpg"
-                    alt="Local chocolate business"
-                    width="180" height="120" loading="lazy">
-                <h2>Shop Local</h2>
-                <p>Choosing local businesses helps keep spending in the community and strengthens local connections.</p>
-            </article>
+        <section
+            id="discover-grid"
+            class="discover-grid"
+            aria-label="Brownsville places of interest">
         </section>
+
     </main>
 
     <footer>
+
         <div class="footer-info">
             <h2>Brownsville Chamber of Commerce</h2>
             <p>Brownsville, Texas</p>
@@ -122,8 +104,16 @@
             <p>Helping local businesses grow and connect.</p>
         </div>
 
-        <p>&copy; <span id="currentyear"></span> Brownsville Chamber of Commerce | Blanca Ruiz | WDD 231</p>
+        <p>
+            &copy; <span id="currentyear"></span>
+            Brownsville Chamber of Commerce |
+            Blanca Ruiz |
+            WDD 231
+        </p>
+
         <p id="lastModified"></p>
+
     </footer>
+
 </body>
 </html>

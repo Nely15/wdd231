@@ -608,8 +608,16 @@ dialog li {
     overflow-wrap: anywhere;
 }
 
+.visit-message {
+    background-color: var(--white);
+    border-left: 5px solid var(--gold);
+    padding: .75rem 1rem;
+    margin: 1rem 0;
+    font-weight: 600;
+}
 
 /* Discover Page */
+
 .discover-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -618,33 +626,84 @@ dialog li {
 }
 
 .discover-card {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "image"
+        "description"
+        "address"
+        "button";
+    grid-template-rows: auto 200px 1fr auto auto;
+    gap: .75rem;
+
+    min-height: 500px;
+
     background-color: var(--white);
     border: 1px solid #d6d6d6;
     border-top: 5px solid var(--gold);
     padding: 1rem;
     border-radius: 4px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, .15);
-    text-align: center;
+}
+
+.discover-card h2 {
+    grid-area: title;
+    color: var(--navy);
+    margin: 0;
+    font-size: 1.35rem;
+}
+
+.discover-card figure {
+    grid-area: image;
+    margin: 0;
 }
 
 .discover-card img {
     display: block;
-    width: 180px;
-    height: 120px;
-    object-fit: contain;
-    margin: 0 auto .75rem;
-}
-
-.discover-card h2 {
-    color: var(--navy);
-    margin: .5rem 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
 .discover-card p {
+    grid-area: description;
     line-height: 1.5;
-    margin-bottom: 0;
+    margin: 0;
 }
 
+.discover-card address {
+    grid-area: address;
+    color: var(--blue);
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.learn-more {
+    grid-area: button;
+    display: block;
+    width: 100%;
+    padding: .7rem 1rem;
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 2rem;
+}
+
+.learn-more:hover,
+.learn-more:focus {
+    background-color: var(--gold);
+    color: var(--navy);
+}
+
+.visit-message {
+    background-color: var(--white);
+    border-left: 5px solid var(--gold);
+    padding: .75rem 1rem;
+    margin: 1rem 0;
+    font-weight: 600;
+}
 
 @media (prefers-reduced-motion: reduce) {
     .membership-card {
