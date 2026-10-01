@@ -1,12 +1,4 @@
-@media only screen and (min-width: 48rem) {
-    .join-layout {
-        grid-template-columns: 1.5fr 1fr;
-        align-items: start;
-        gap: 2rem;
-    }
-}
-    
-@media only screen and (min-width: 32rem) {
+    @media only screen and (min-width: 32rem) {
     .hamburger {
         display: none;
     }
@@ -50,40 +42,23 @@
 }
 
 
+@media only screen and (min-width: 48rem) {
+    .join-layout {
+        grid-template-columns: 1.5fr 1fr;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .membership-levels {
+        display: grid;
+        grid-template-rows: auto repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
+
 @media only screen and (min-width: 60rem) {
-    .member-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .discover-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .hero-content {
-        max-width: 450px;
-        padding: 1.5rem;
-    }
-
-    .hero-content h1 {
-        font-size: 1.8rem;
-        margin-bottom: .6rem;
-    }
-
-    .hero-content p {
-        font-size: 1rem;
-        line-height: 1.5;
-        margin: .6rem 0;
-    }
-
-    .cta {
-        padding: .8rem 1.2rem;
-        font-size: 1rem;
-    }
-
     .join-layout {
         grid-template-columns: 2fr 1fr;
-        align-items: start;
-        gap: 2rem;
     }
 
     .membership-levels {
