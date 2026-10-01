@@ -1,3 +1,11 @@
+@media only screen and (min-width: 48rem) {
+    .join-layout {
+        grid-template-columns: 1.5fr 1fr;
+        align-items: start;
+        gap: 2rem;
+    }
+}
+    
 @media only screen and (min-width: 32rem) {
     .hamburger {
         display: none;
@@ -21,6 +29,10 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .discover-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     #spotlight-list {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -40,6 +52,10 @@
 
 @media only screen and (min-width: 60rem) {
     .member-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .discover-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 
