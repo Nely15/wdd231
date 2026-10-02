@@ -1,0 +1,87 @@
+:root {
+    --ivory:#fff9f5;
+    --plum: #4a2c40;
+    --rose: #c98f9a;
+    --gold: #c8a96b;
+    --white: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--ivory);
+    color: var(--plum);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+button,
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Roboto Slab", serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--plum);
+    color: var(--ivory);
+    border-bottom: 4px solid var(--gold);
+}
+
+.header-content {
+    display: flex;;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.logo {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.menu-button {
+    border: 2px solid var(--gold);
+    background-color: transparent;
+    color: var(--ivory);
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0.35rem 0.5rem;
+    cursor: pointer;
+}
+
+.navigation {
+    display: none;
+}
