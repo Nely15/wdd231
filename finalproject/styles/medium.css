@@ -13,14 +13,37 @@
     }
 
     .hero {
-        padding: 2rem 0;
+        padding: 2.5rem auto;
+    }
+
+    .hero-image img {
+        min-height: 450px;
+        aspect-ratio: 16 / 10;
+    }
+
+    .hero-content {
+        left: 8%;
+        right: 8%;
+        bottom: 8%;
+        padding: 1.5rem 2rem;
     }
 
     .hero-content h1 {
         font-size: 2.75rem;
     }
 
+    .hero-content p {
+        max-width: 650px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .gift-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .filter-controls {
+    grid-template-columns: repeat(3, 1fr);
+    }
+
 }

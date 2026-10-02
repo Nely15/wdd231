@@ -99,13 +99,19 @@ section {
 /* Hero */
 .hero {
     position: relative;
-    margin: 2rem auto;
+    width: 100%;
     max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.hero-image {
+    width: 100%;
 }
 
 .hero-image img {
     width: 100%;
-    aspect-ratio: 16 / 9;
+    min-height: 320px;
+    aspect-ratio: 4 / 4;
     object-fit: cover;
     border-radius: 0.35rem;
 }
@@ -125,12 +131,13 @@ section {
 .hero-content h1 {
     margin-bottom: 0.75rem;
     color: var(--ivory);
-    font-size: clamp(1.7rem, 7vw, 2.5rem);
+    font-size: clamp(1.7rem, 7vw, 2.3rem);
     line-height: 1.15;
 }
 
 .hero-content p {
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
+    font-size: 0.9rem;
 }
 
 .hero-content .button {
@@ -283,4 +290,67 @@ footer {
 footer p {
     margin: 0;
     color: var(--gold);
+}
+
+/* Gift Ideas Page */
+
+.page-intro {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.page-intro h1 {
+    margin-bottom: 0.75rem;
+    font-size: 2rem;
+}
+
+.page-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.gift-filters {
+    padding: 1.5rem;
+    border: 1px solid var(--gold);
+    border-radius: 0.35rem;
+    background-color: var(--white);
+}
+
+.gift-filters h2 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.filter-controls {
+    display: grid;
+    gap: 1rem;
+}
+
+.filter-controls label {
+    display: grid;
+    gap: 0.35rem;
+    font-weight: 600;
+}
+
+.filter-controls select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid var(--plum);
+    border-radius: 0.35rem;
+    background-color: var(--ivory);
+    color: var(--plum);
+    font: inherit;
+}
+
+.gift-filters .button {
+    margin-top: 1rem;
+    background-color: var(--rose);
+    border-color: var(--rose);
+    color: var(--plum);
+}
+
+.gift-message {
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 600;
 }

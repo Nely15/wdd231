@@ -33,6 +33,15 @@
         width: min(100% - 4rem, 1000px);
     }
 
+    .hero {
+        margin: 3rem auto;
+    }
+
+    .hero-image img {
+        min-height: 400px;
+        aspect-ratio: 16 / 7;
+    }
+
     .hero-content {
         left: 10%;
         right: 10%;
