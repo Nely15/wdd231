@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "Cozy Host Gift Set",
+        "occasion": "Housewarming",
+        "recipient": "Host",
+        "price": 48,
+        "category": "Home",
+        "description": "A cozy collection of thoughtful items for someone who loves welcoming guests."
+    },
+
+    {
+        "id": 2,
+        "name": "Personalized Keepsake Box",
+        "occasion": "Birthday",
+        "recipient": "Friend",
+        "price": 38,
+        "category": "Personalized",
+        "description": "A personalized keepsake box designed to hold meaningful memories and small treasures."
+    },
+
+    {
+        "id": 3,
+        "name": "Weekend Experience Kit",
+        "occasion": "Anniversary",
+        "recipient": "Couple",
+        "price": 120,
+        "category": "Experience",
+        "description": "A curated gift idea for couples who would rather create memories than collect things."
+    },
+
+    {
+        "id": 4,
+        "name": "Relaxation Gift Basket",
+        "occasion": "Self Care",
+        "recipient": "Woman",
+        "price": 55,
+        "category": "Wellness",
+        "description": "A relaxing collection designed to encourage a quiet evening and a little self-care."
+    },
+
+    {
+        "id": 5,
+        "name": "Graduation Celebration Set",
+        "occasion": "Graduation",
+        "recipient": "Graduate",
+        "price": 65,
+        "category": "Celebration",
+        "description": "A celebratory gift set for recognizing an important academic milestone."
+    },
+
+    {
+        "id": 6,
+        "name": "Coffee Lover Collection",
+        "occasion": "Birthday",
+        "recipient": "Coffee Lover",
+        "price": 42,
+        "category": "Food & Drink",
+        "description": "A thoughtful collection for someone who enjoys relaxing with a favorite coffee."
+    },
+
+    {
+        "id": 7,
+        "name": "Thoughtful Teacher Gift",
+        "occasion": "Thank You",
+        "recipient": "Teacher",
+        "price": 32,
+        "category": "Appreciation",
+        "description": "A simple and meaningful way to show appreciation to a favorite teacher."
+    },
+
+    {
+        "id": 8,
+        "name": "New Baby Welcome Set",
+        "occasion": "New Baby",
+        "recipient": "New Parent",
+        "price": 58,
+        "category": "Family",
+        "description": "A sweet welcome gift for a new parent and their growing family."
+    },
+
+    {
+        "id": 9,
+        "name": "Elegant Birthday Box",
+        "occasion": "Birthday",
+        "recipient": "Woman",
+        "price": 72,
+        "category": "Celebration",
+        "description": "An elegant birthday gift collection designed to feel personal and special."
+    },
+
+    {
+        "id": 10,
+        "name": "Adventure Ready Set",
+        "occasion": "Birthday",
+        "recipient": "Traveler",
+        "price": 85,
+        "category": "Travel",
+        "description": "A practical and thoughtful gift idea for someone who enjoys exploring new places."
+    },
+
+    {
+        "id": 11,
+        "name": "Office Appreciation Gift",
+        "occasion": "Thank You",
+        "recipient": "Coworker",
+        "price": 35,
+        "category": "Appreciation",
+        "description": "A polished gift idea for recognizing a coworker or professional connection."
+    },
+
+    {
+        "id": 12,
+        "name": "Date Night Experience",
+        "occasion": "Anniversary",
+        "recipient": "Couple",
+        "price": 95,
+        "category": "Experience",
+        "description": "A curated experience idea for couples who enjoy spending meaningful time together."
+    },
+
+    {
+        "id": 13,
+        "name": "Best Friend Memory Set",
+        "occasion": "Birthday",
+        "recipient": "Friend",
+        "price": 50,
+        "category": "Personalized",
+        "description": "A sentimental gift idea for celebrating a special friendship."
+    },
+
+    {
+        "id": 14,
+        "name": "Holiday Host Collection",
+        "occasion": "Holiday",
+        "recipient": "Host",
+        "price": 68,
+        "category": "Home",
+        "description": "A festive collection created for someone hosting a holiday gathering."
+    },
+
+    {
+        "id": 15,
+        "name": "Milestone Celebration Box",
+        "occasion": "Celebration",
+        "recipient": "Family",
+        "price": 90,
+        "category": "Celebration",
+        "description": "A meaningful gift collection for celebrating an important personal milestone."
+    }
+    
+]
