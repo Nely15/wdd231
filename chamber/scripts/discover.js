@@ -28,7 +28,7 @@ discoverItems.forEach((item) => {
             href="${item.url}"
             target="_blank"
             rel="noopener">
-            Learn More
+            Learn More About ${item.name}
         </a>
     `;
 
