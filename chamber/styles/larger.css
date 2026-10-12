@@ -1,0 +1,114 @@
+@media only screen and (min-width: 32rem) {
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navigation li {
+        flex: 1;
+        max-width: 180px;
+    }
+
+    .member-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #spotlight-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #forecast-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Home Page */
+
+    .hero-content {
+        max-width: 350px;
+        padding: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 48rem) {
+
+    .join-layout {
+        grid-template-columns: 1.5fr 1fr;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .membership-levels {
+        display: grid;
+        grid-template-rows: auto repeat(4, 1fr);
+        gap: 1rem;
+    }
+}
+
+
+@media only screen and (min-width: 60rem) {
+
+    .join-layout {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .membership-levels {
+        position: sticky;
+        top: 1rem;
+    }
+}
+
+
+/* Discover Page - Large Screens */
+/* 1025px and above */
+
+@media only screen and (min-width: 64.0625rem) {
+
+    .discover-grid {
+        min-height: 1400px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .discover-card {
+        grid-template-columns: 190px 1fr;
+        grid-template-areas:
+            "title title"
+            "image description"
+            "image address"
+            "button button";
+        gap: .4rem;
+        min-height: 0;
+    }
+
+    .discover-card img {
+        width: 100%;
+        height: 100%;
+        min-height: 150px;
+        object-fit: cover;
+        transition: transform .3s ease, filter .3s ease;
+    }
+
+    .discover-card address {
+        margin: 0;
+    }
+
+    .learn-more {
+       margin-top: 0;
+    }
+
+    .discover-card img:hover {
+        transform: scale(1.05);
+        filter: brightness(1.1);
+    }
+
+}

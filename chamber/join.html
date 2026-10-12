@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brownsville Chamber of Commerce | Join</title>
+    <meta name="description" content="Explore Brownsville Chamber of Commerce members, local businesses, services, and organizations in Brownsville, Texas.">
+    <meta name="author" content="Blanca Ruiz">
+
+
+    <meta property="og:title" content="Brownsville Chamber of Commerce | Join Page">
+    <meta property="og:description" content="Join the Brownsville Chamber of Commerce and connect with local businesses and organizations.">
+    <meta property="og:image" content="https://nely15.github.io/wdd231/chamber/images/chamber_social.png">
+    <meta property="og:url" content="https://nely15.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Slab:wght@600;700&display=swap"
+        rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    
+</head>
+
+<body>
+    <header>
+
+        <a class="brand" href="index.html" aria-label="Home">
+            <img src="images/chamber_logo.svg" alt="Brownsville Chamber logo" width="60" height="60">
+            <span class="brand-name">
+                <span>Brownsville</span>
+                <strong>Chamber of Commerce</strong>
+            </span>
+        </a>
+
+        <button id="ham-btn" class="hamburger" type="button" aria-label="Open navigation menu" aria-controls="nav-bar" aria-expanded="false"></button> 
+    </header>
+
+    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+        <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html" class="current" aria-current="page">Join</a></li>
+
+        </ul>
+
+    </nav>
+
+    <main>
+
+        <h1>Join the Brownsville Chamber of Commerce</h1>
+
+        <div class="join-layout">
+        
+            <form method="get" action="thankyou.html" class="join-form">
+
+                <label>
+
+                    First Name
+
+                    <input
+
+                        type="text"
+                        name="firstName"
+                        title="Enter your first name"
+                        autocomplete="given-name"
+                        required
+
+                    >
+
+                </label>
+
+                <label>
+
+                    Last Name
+
+                    <input
+
+                        type="text"
+                        name="lastName"
+                        title="Enter your last name"
+                        autocomplete="family-name"
+                        required
+
+                    >
+                    
+                </label>
+                
+                <label>
+
+                    Organizational Title
+
+                    <input
+
+                        type="text"
+                        name="organizationTitle"
+                        title="Enter your organizational title using at least 7 letters, spaces, or hyphens"
+                        autocomplete="organization-title"
+                        pattern="[A-Za-z -]{7,}"
+
+                    >
+                    
+                </label>
+                
+                <label>
+
+                    Email Address
+
+                    <input
+
+                        type="email"
+                        name="email"
+                        title="Enter your email address"
+                        autocomplete="email"
+                        placeholder="example@gmail.com"
+                        required
+
+                    >
+                    
+                </label>
+                
+                <label>
+
+                    Mobile Phone Number
+
+                    <input
+
+                        type="tel"
+                        name="phone"
+                        title="Enter your mobile phone number"
+                        autocomplete="tel"
+                        required
+
+                    >
+                    
+                </label>
+    
+                <label>
+
+                    Business/Organization Name
+
+                    <input
+
+                        type="text"
+                        name="organization"
+                        title="Enter your business or organization name"
+                        autocomplete="organization"
+                        required
+
+                    >
+                    
+                </label>
+                            
+                <label>
+
+                    Membership Level
+
+                    <select name="membership" title="Select a membership level" required>
+
+                        <option value="" disabled selected>Select a membership level</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+
+                    </select>
+                            
+                </label>
+                
+                <label>
+
+                    Business/Organization Description
+
+                    <textarea
+                        
+                        name="description"
+                        title="Enter a description of your business or organization"
+                        rows="5"
+
+                    ></textarea>
+                    
+                </label>
+
+                <input
+
+                    type="hidden"
+                    name="timestamp"
+                    id="timestamp"
+
+                >    
+
+                <input type="submit" value="Submit Membership Application">
+                            
+            </form>
+
+
+            <section class="membership-levels">
+
+                <h2>Membership Levels</h2>
+
+                <article class="membership-card">
+
+                    <h2>NP Membership</h2>
+
+                    <p>For nonprofit organizations.</p>
+
+                    <a href="#np-modal">Learn More</a>
+
+                </article>
+                
+                <article class="membership-card">
+
+                    <h2>Bronze Membership</h2>
+
+                    <p>Great benefits for growing businesses.</p>
+
+                    <a href="#bronze-modal">Learn More</a>
+                    
+                </article>
+                
+                <article class="membership-card">
+
+                    <h2>Silver Membership</h2>
+
+                    <p>Additional marketing and event benefits.</p>
+
+                    <a href="#silver-modal">Learn More</a>
+                    
+                </article>
+                
+                <article class="membership-card">
+
+                    <h2>Gold Membership</h2>
+
+                    <p>Our highest level of membership benefits.</p>
+
+                    <a href="#gold-modal">Learn More</a>
+                    
+                </article>
+
+            </section>
+
+        </div>
+        
+        <dialog id="np-modal">
+
+            <button type="button" class="close-modal" aria-label="Close dialog">X</button>
+
+            <h2>NP Membership</h2>
+
+            <p>NP Membership is available for nonprofit organizations and has no membership fee.</p>
+
+            <ul>
+
+                <li>Chamber networking opportunities</li>
+
+                <li>Community events</li>
+
+                <li>Nonprofit organization support</li>
+
+            </ul>
+
+            <p class="membership-cost">COST: Free</p>
+
+        </dialog>
+
+        <dialog id="bronze-modal">
+
+            <button type="button" class="close-modal" aria-label="Close dialog">X</button>
+
+            <h2>Bronze Membership</h2>
+
+            <p>Bronze Membership provides basic chamber benefits for growing businesses.</p>
+
+            <ul>
+
+                <li>Networking opportunities</li>
+
+                <li>Business training</li>
+
+                <li>Event discounts</li>
+
+            </ul>
+
+            <p class="membership-cost">COST: $25</p>
+
+        </dialog>
+
+        <dialog id="silver-modal">
+            
+            <button type="button" class="close-modal" aria-label="Close dialog">X</button>
+
+            <h2>Silver Membership</h2>
+
+            <p>Silver Membership includes additional opportunities to promote your business.</p>
+
+            <ul>
+
+                <li>Networking opportunities</li>
+
+                <li>Business training</li>
+
+                <li>Event discounts</li>
+
+                <li>Advertising opportunities</li>
+
+            </ul>
+            
+            <p class="membership-cost">COST: $50</p>
+
+        </dialog>
+
+        <dialog id="gold-modal">
+            
+            <button type="button" class="close-modal" aria-label="Close dialog">X</button>
+
+
+            <h2>Gold Membership</h2>
+
+            <p>Gold Membership includes expanded marketing and chamber benefits for established businesses.</p>
+
+            <ul>
+
+                <li>Networking opportunities</li>
+
+                <li>Business training</li>
+
+                <li>Event discounts</li>
+
+                <li>Advertising opportunities</li>
+
+                <li>Home page spotlight opportunities</li>
+
+                <li>Special chamber events</li>
+
+            </ul>
+            
+            <p class="membership-cost">COST: $100</p>
+
+        </dialog>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-info">
+
+            <h2>Brownsville Chamber of Commerce</h2>
+            <p>Brownsville, Texas</p>
+            <p>Phone: (956) 555-1550</p>
+            <p>Email: info@brownsvillechamber.example</p>
+            <p>Helping local businesses grow and connect.</p>
+
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> Brownsville Chamber of Commerce | Blanca Ruiz | WDD 231</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+
+</body>
+</html>

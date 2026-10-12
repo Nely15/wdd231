@@ -1,0 +1,82 @@
+[
+    {
+
+        "name": "Raw Xocolat",
+        "address": "500 E. Morrison Rd. , Brownsville, TX",
+        "phone": "(956) 933-7690",
+        "website": "https://rawxocolat.cloveronline.com/categories/all" ,
+        "image": "rawxocolat.jpg",
+        "membership": 3,
+        "description": "A local chocolate factory & cafe shop serving gourmet chocolates, pastries, coffee, and breakfast.",
+        "category": "Food & Drink"
+
+    },
+
+    {
+        "name": "Sunrise Tortas",
+        "address": "2370 North Expy, Brownsville, TX",
+        "phone": "(956) 541-5031",
+        "website": "https://sunrise-tortas.hey-restaurants.com/",
+        "image": "sunrise_tortas.jpg",
+        "membership": 2,
+        "description": "A local Mexican-style restaurant serving tortas, flautas, aguas frescas, and other mexican food and snacks.",
+        "category": "Food & Drink"
+    },
+
+    {
+        "name": "uBreakiFix",
+        "address": "3025 Boca Chica Blvd Suite E 1, Brownsville, TX",
+        "phone": "(956) 545-0200",
+        "website":"https://www.ubreakifix.com/locations/brownsville" ,
+        "image": "ubreakifix.jpg",
+        "membership": 3,
+        "description": "Phone and computer repair services for local businesses and organizations.",
+        "category": "Technology"
+    },
+
+    {
+        "name": "De Ayala Bakery",
+        "address": "895 Calle Milpa Verde, Brownsville, TX",
+        "phone": "(956) 504-2195",
+        "website": "https://www.facebook.com/people/De-Ayala-Bakery-LLC/100063748771787/?sk=about",
+        "image": "de_ayala_bakery.jpg",
+        "membership": 1,
+        "description": "A  neighborhood bakery offering breads, cakes, and pastries.",
+        "category": "Food & Drink"
+    },
+
+    {
+        "name": "Nicky's Print and Signs Shop",
+        "address": "700 E Levee St, Brownsville, TX",
+        "phone": "(956) 336-1102",
+        "website": "https://nickysprintshop.com/" ,
+        "image": "nickys_print_shop.jpg",
+        "membership": 2,
+        "description": "Printing and design services for businesses and events.",
+        "category": "Business Services"
+    },
+
+    {
+        "name": "Rodeo Dental",
+        "address": "4100 Pablo Kisel, Brownsville, TX",
+        "phone": "(956) 555-0106",
+        "website": "https://www.rodeodental.com/",
+        "image": "rodeo_dental.jpg",
+        "membership": 1,
+        "description": "Family dental services for children and adults.",
+        "category": "Health"
+    },
+
+    {
+        "name": "Fischer Landscaping",
+        "address": "2065 FM-3248, Brownsville, TX",
+        "phone": "(956) 579-1810",
+        "website": "https://fischerlandscapingusa.com/",
+        "image":"fischer_landscaping.jpg",
+        "membership": 3,
+        "description": "Lawn care and landscaping services for homes and businesses.",
+        "category": "Home Services"
+    }
+    
+
+]
