@@ -36,8 +36,6 @@ if (giftRequestForm && formMessage) {
                 })
             );
 
-            window.location.href = "thank-you.html";
-
         } catch (error) {
 
             console.error("Unable to save gift request:", error);

@@ -17,6 +17,9 @@ html {
 
 body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: var(--ivory);
     color: var(--plum);
     font-family: Arial, Helvetica, sans-serif;
@@ -112,6 +115,7 @@ header {
 
 /* Main */
 main {
+    flex: 1;
     width: min(100% - 2rem, 1000px);
     margin: 0 auto;
 }
@@ -289,7 +293,6 @@ section {
 .gift-card p {
     margin-bottom: 0.5rem;
 }
-
 
 .gift-price {
     display: block;
@@ -697,4 +700,15 @@ footer p + p {
     background-color: var(--rose);
     border-color: var(--rose);
     color: var(--plum);
+}
+
+/* Thank-you page buttons */
+.gift-request > .button {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin-top: 1rem;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: center;
 }
