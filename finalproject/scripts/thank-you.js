@@ -1,37 +1,40 @@
+
 const summary = document.querySelector("#request-summary");
 const message = document.querySelector("#thank-you-message");
 const heading = document.querySelector("#thank-you-heading");
 
-try {
-    const savedRequest = sessionStorage.getItem("signatureGiftRequest");
+const params = new URLSearchParams(window.location.search);
 
-    if (!savedRequest) {
-        message.textContent = "No recent request was found. You can start a new gift request below.";
-    } else {
-        const request = JSON.parse(savedRequest);
-        heading.textContent = `Thank you, ${request.name || "there"}!`;
-        message.textContent = "Here is a summary of the information you submitted.";
+const fields = [
+    ["Name", "name"],
+    ["Email", "email"],
+    ["Recipient", "recipient"],
+    ["Occasion", "occasion"],
+    ["Budget", "budget"],
+    ["Preferred style", "style"],
+    ["Interests", "interests"],
+    ["Additional details", "details"]
+];
 
-        const fields = [
-            ["Name", request.name],
-            ["Email", request.email],
-            ["Recipient", request.recipient],
-            ["Occasion", request.occasion],
-            ["Budget", request.budget],
-            ["Preferred style", request.style],
-            ["Interests", request.interests],
-            ["Additional details", request.details || "None provided"]
-        ];
+// Check whether a form was submitted.
+if (!params.has("name")) {
+    message.textContent =
+        "No recent request was found. Please submit the gift request form first.";
+} else {
+    const name = params.get("name") || "there";
 
-        fields.forEach(([label, value]) => {
-            const term = document.createElement("dt");
-            const description = document.createElement("dd");
-            term.textContent = label;
-            description.textContent = value || "Not provided";
-            summary.append(term, description);
-        });
-    }
-} catch (error) {
-    console.error("Unable to display request:", error);
-    message.textContent = "We couldn't display your request. Please try submitting it again.";
+    heading.textContent = `Thank you, ${name}!`;
+    message.textContent =
+        "Here is a summary of the information you submitted.";
+
+    fields.forEach(([label, key]) => {
+        const term = document.createElement("dt");
+        const description = document.createElement("dd");
+
+        term.textContent = label;
+        description.textContent =
+            params.get(key) || "Not provided";
+
+        summary.append(term, description);
+    });
 }

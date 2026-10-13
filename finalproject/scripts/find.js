@@ -3,8 +3,7 @@ const formMessage = document.querySelector("#form-message");
 
 if (giftRequestForm && formMessage) {
     giftRequestForm.addEventListener("submit", (event) => {
-        event.preventDefault();
-
+        
         if (!giftRequestForm.reportValidity()) {
 
             return;

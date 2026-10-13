@@ -120,7 +120,7 @@ function displayGifts(giftList) {
         detailsButton.dataset.id = gift.id;
         detailsButton.textContent = "View Details";
 
-        content.append(title, price, detailsButton);
+        content.append(title, description, recipient, occasion, category, price, detailsButton);
         card.append(image, content);
         giftGrid.append(card);
     });
