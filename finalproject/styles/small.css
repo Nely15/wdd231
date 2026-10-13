@@ -3,6 +3,7 @@
     --plum: #4a2c40;
     --rose: #c98f9a;
     --gold: #dea62f;
+    --gold-text: #805d13;
     --white: #ffffff;
 }
 
@@ -203,7 +204,7 @@ section {
 
 .intro span {
     margin: 0 0.35rem;
-    color: var(--gold);
+    color: var(--gold-text);
 }
 
 /* gift search */
@@ -572,10 +573,6 @@ footer p {
     color: var(--plum);
 }
 
-.featured .gift-card {
-    transition: transform 180ms ease, box-shadow 180ms ease;
-}
-
 @media (hover: hover) {
     .featured .gift-card:hover {
         transform: translateY(-3px);
@@ -593,15 +590,6 @@ footer p {
 :focus-visible {
     outline: 3px solid var(--gold);
     outline-offset: 3px;
-}
-
-.gift-card .gift-price {
-    margin-top: auto;
-    padding-top: 0.5rem;
-    font-size: 1.4rem;
-    margin: 0.25rem 0 1rem;
-    color: var(--plum);
-    font-weight: 700;
 }
 
 .gift-card .button {
@@ -675,12 +663,9 @@ footer p + p {
     top: 1rem;
 }
 
-/* Make gift prices visible on every card */
-.gift-card-content .gift-price {
+/* Gift price styling */
+.gift-card .gift-price {
     display: block;
-    visibility: visible;
-    opacity: 1;
-    position: static;
     width: 100%;
     margin: 0.75rem 0;
     padding: 0.5rem 0;
